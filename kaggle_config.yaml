@@ -1,0 +1,18 @@
+---
+data_path: /kaggle/input/merged-retina-datasets/merged_20_labels_drop_10.0_perc.csv
+img_path:
+- /kaggle/input/merged-retina-datasets/ARIA/all_images_crop
+- /kaggle/input/merged-retina-datasets/STARE/all_images_crop
+- /kaggle/input/merged-retina-datasets/RFMiD/Training
+output_path: /kaggle/working
+img_size: 384
+use_lmt: True
+num_classes: 20
+backbone: True
+depths:
+  - 3
+heads:
+  - 4
+window_size: 6
+batch_size: 16
+num_workers: 2

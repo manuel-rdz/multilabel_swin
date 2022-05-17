@@ -1,0 +1,18 @@
+---
+data_path: C:\Users\AI\Desktop\student_Manuel\datasets\drop_all\20_labels\merged_20_labels_drop_10.0_perc.csv
+img_path:
+- C:\Users\AI\Desktop\student_Manuel\datasets\ARIA\all_images_crop
+- C:\Users\AI\Desktop\student_Manuel\datasets\STARE\all_images_crop
+- C:\Users\AI\Desktop\student_Manuel\datasets\RIADD_cropped\Training_Set\Training
+output_path: C:\Users\AI\Desktop\student_Manuel\codes\trained_models\comparison\
+img_size: 384
+use_lmt: True
+num_classes: 20
+backbone: True
+depths:
+  - 3
+heads:
+  - 4
+window_size: 6
+batch_size: 16
+num_workers: 4
